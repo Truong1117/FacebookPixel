@@ -12,7 +12,8 @@ https://devdocs.magento.com/extensions/install/#get-the-extensions-composer-name
 2.	Navigate to your Magento project directory and update your composer.json file
 Command: composer require sparsh/magento-2-facebook-pixel-extension:<version>
   
-#How to set up and install Facebook Pixel
+#How to set up and install Facebook Pixel:
+  
   https://www.facebook.com/business/help/952192354843755?id=1205376682832142
 
 #Enable Extension:
