@@ -1,0 +1,32 @@
+<?php
+$data   = $block->getFacebookPixelData();
+$pageView = $block->getDisabled();
+$productData = $block->getProduct();
+$searchData = $block->getSearchData();
+$categoryData = $block->getCategory();
+$addToWishlist = $block->getAddToWishList();
+$orderData = $block->getOrder();
+$id     = $data['id'];
+$action = $data['action_name'];
+?>
+<script type="text/x-magento-init">
+    {
+    "*":
+    {
+            "Sparsh_FacebookPixel/js/facebook_pixel_init": {
+                "id" : <?= $block->escapeHtml($id); ?>,
+                "action" : "<?= $data['action_name']; ?>",
+                "pageView" : "<?= $pageView; ?>",
+                "productData" : <?= $productData; ?>,
+                "categoryData" : <?= $categoryData; ?>,
+                "addToWishList" : <?= $addToWishlist; ?>,
+                "searchdata" :  <?= $searchData; ?>,
+                "orderData" : <?= $orderData; ?>
+            }
+        }
+    }
+</script>
+<!-- Facebook Pixel Code -->
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=<?= $block->escapeHtml($id); ?>&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->

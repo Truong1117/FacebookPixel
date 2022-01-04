@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <sparsh_facebook_pixel>
+            <general>
+                <enable>0</enable>
+            </general>
+            <event_tracking>
+                <disable_code></disable_code>
+                <product_view>1</product_view>
+                <category_view>1</category_view>
+                <purchase>1</purchase>
+                <add_to_wishlist>1</add_to_wishlist>
+                <search>1</search>
+            </event_tracking>
+        </sparsh_facebook_pixel>
+    </default>
+</config>

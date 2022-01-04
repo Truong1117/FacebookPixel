@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+   <event name="wishlist_add_product">
+      <observer name="sparsh_facebookpixel_add_to_wishlist" instance="Sparsh\FacebookPixel\Observer\WishlistObserver" />
+   </event>
+</config>
